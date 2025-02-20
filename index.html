@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomato Paste Co.</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 12pt;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #c42424;
+            color: #f4f4f4;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .header{
+            font-size: 2em;
+            font-weight: bold;
+            color: black;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #b31313;
+            margin: 0 0 0 0;
+        }
+
+        p{
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: #b12424;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        .product-item {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .product-item img {
+            max-width: 200px;
+            height: auto;
+            margin-right: 20px;
+            animation: float 3s infinite ease-in-out;
+        }
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .process-step {
+            width: 30%;
+            text-align: center;
+        }
+        .process-step img {
+            max-width: 100px;
+            height: auto;
+            animation: spin 5s infinite linear;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #c42424;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #b31313;
+        }
+
+        /* CSS Animations */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .animated-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            animation: slide 5s infinite alternate ease-in-out;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(-20px);
+            }
+            100% {
+                transform: translateX(20px);
+            }
+        }
+
+        /* Floating Text Animation */
+        .floating-text {
+            font-size: 1.2em;
+            font-weight: bold;
+            animation: floatText 3s infinite ease-in-out;
+        }
+
+        @keyframes floatText {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="header">Lavonce Tomato Paste.</h1>
+    <div class="floating-text">Just for you to enjoy the incredible taste</div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Home Page -->
+    <section id="home" class="container">
+        <h2>Welcome to Lavonce Tomato Paste.</h2>
+        <p>At Lavonce Tomato Paste., we are dedicated to providing the finest quality tomato paste to households, restaurants, and retailers worldwide. Our products are made from the freshest tomatoes, carefully processed to retain their natural flavor and nutrients.</p>
+        <img src="1.jpg" alt="Tomato Banner" class="animated-image">
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <h3>Our History</h3>
+        <p>Lavonce Tomato Paste was founded in 2010 with a mission to deliver high-quality tomato products to the global market. Over the years, we have grown into a leading supplier of premium tomato paste, known for our commitment to quality and sustainability.</p>
+        <h3>Our Mission</h3>
+        <p>To provide safe, delicious, and nutritious tomato paste that enhances the culinary experience of our customers.</p>
+        <h3>Our Vision</h3>
+        <p>To be the global leader in tomato paste production by 2030, setting new standards for quality and innovation.</p>
+        <img src="2.jpg" alt="About Tomato" class="animated-image">
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="container">
+        <h2>Various meals prepared with the product</h2>
+        <div class="product-item">
+            <img src="3.jpg" alt="Classic Tomato Paste">
+            <div>
+                <h3>Tomato Stew</h3>
+                <p>Our classic tomato paste is made from sun-ripened tomatoes, offering a rich and robust flavor. Perfect for soups, stews, and sauces.</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="4.jpg" alt="Organic Tomato Paste">
+            <div>
+                <h3>Light Soup</h3>
+                <p>Made from organically grown tomatoes, this paste is free from additives and preservatives. Ideal for health-conscious consumers.</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="5.jpg" alt="Spicy Tomato Paste">
+            <div>
+                <h3>Jollof Rice</h3>
+                <p>Add a kick to your dishes with our spicy tomato paste, infused with chili peppers for an extra burst of flavor.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process -->
+    <section id="process" class="container">
+        <h2>Our Process</h2>
+        <p>At Lavonce Tomato Paste, we follow a meticulous process to ensure the highest quality tomato paste:</p>
+        <div class="process-steps">
+            <div class="process-step">
+                <img src="61.jpg" alt="Harvesting">
+                <h3>Harvesting</h3>
+                <p>We handpick the freshest tomatoes from our farms.</p>
+            </div>
+            <div class="process-step">
+                <img src="7.jpg" alt="Processing">
+                <h3>Processing</h3>
+                <p>Tomatoes are washed, sorted, and processed to extract the pulp.</p>
+            </div>
+            <div class="process-step">
+                <img src="8.jpg" alt="Packaging">
+                <h3>Packaging</h3>
+                <p>The paste is packaged in eco-friendly materials for freshness.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="home" class="container">
+        <h2>LATEST UPDATE</h2>
+        <img src="update.jpg" alt="Tomato Banner" class="animated-image">
+        <h2>HAPPY SUNSHINE WON THE 3RD CORPORATE EXCELLENCE DIAMOND AWARDS</h2>
+        <p>On Nov 28th, 2024, the 3rd CEDAWARDS was held in The African Regent Hotel,
+            Accra. Mr. Mutawaikilu Zakari and Mr. Sampson Kwahu Asare accepted the
+            AWARD of EXCELLENCE for Lavonce Tomato Mix of Happy Sunshine Co., Ltd under
+            the “Food and Beverage” category. <br>
+            This award is recognized and given by the media organization The Travel
+            Director Magazine, a political, business, travel and advocacy-based events
+            and publications house. This year’s event, themed “THE YEAR OF OUTSTANDING
+            MARKET INNOVATORS,” promises to celebrate the exceptional contributions of
+            individuals and organizations that have demonstrated remarkable creativity,
+            ingenuity, and leadership in driving market innovation in Ghana. BACKGROUND As
+            we reflect on the past year, it is clear that the business landscape has been
+            characterized by rapid changes and challenges. In this dynamic environment,
+            commitment from Happy Sunshine Co., Ltd to innovation has not only set it apart,
+            but has also played a VITAL ROLE IN SHAPING THE FUTURE OF INDUSTRY.<br>
+            The awards pronounce and highlight the ability to identify emerging
+            trends, adapt to shifting consumer demands, and implement groundbreaking
+            solutions, which serve as significant milestones of impact on the broader
+            market.
+        </p>
+        <h2>The nomination of Lavonce Tomato Mix is a testament to the outstanding
+            achievements in the following areas:</h2>
+        <h3>Innovative Solutions:</h3>
+        <p>contributions from fields of product, service delivery and
+            business initiation have been instrumental to the transformation
+            of the market and consumer behavior. This innovation has not only
+            addressed varying critical needs but has also set a new benchmark
+            for excellence in its industry.
+        </p>
+
+        <h3>Market Responsiveness:</h3>
+        <p>In a time when adaptability is crucial, the ability to pivot and respond to market changes has been exemplary with strategic foresight, positioning Happy Sunshine Co., Ltd as a leader in the field.
+        </p>
+
+        <h3>Collaboration and Partnerships:</h3>
+        <p>efforts to foster collaboration within the industry have been commendable. And has also contributed to the collective growth of the sector.
+        </p>
+
+        <h3>Sustainability and Social Impact:</h3>
+        <p>commitment to sustainable practices and social responsibility has set a hallmark for others. The selection for the award demonstrates Happy Sunshine’s dedication to creating and engineering a future for community and the environment.
+        </p>
+
+        <p>Once again, congratulations on Lavonce’s well-deserved nomination and won for the Corporate Excellence Diamond Awards 2024. We hope this dedication to innovation and excellence is truly inspiring, we wish our continued success in future endeavors.</p>
+
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions or inquiries? Reach out to us!</p>
+        <div class="contact-info">
+            <p><strong>Address:</strong> 123 Tomato Street, Accra, Ghana</p>
+            <p><strong>Phone:</strong> +233 123 456 789</p>
+            <p><strong>Email:</strong> info@Lavoncetomatopaste.com</p>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <img src="9.jpg" alt="Contact Us" class="animated-image">
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 Lavonce Tomato Paste  All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
